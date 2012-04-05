@@ -7,6 +7,6 @@ admin.autodiscover()
 urlpatterns = patterns('',
     (r'^$', 'views.form'),
     url(r'^admin/', include(admin.site.urls)),
-
+    url(r'', include('feincms.urls')),
 )
 urlpatterns += static.static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

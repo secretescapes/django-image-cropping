@@ -35,6 +35,8 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.admin',
+    'feincms',
+    'feincms.module.page',
     'easy_thumbnails',
     'image_cropping',
     'example',

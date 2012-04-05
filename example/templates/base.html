@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image cropping example</title>
+    {{ form.media }}
+  </head>
+  <body>
+    <h1>Feincms example</h1>
+    <div id="content">
+      {% block content %}
+        {% for content in feincms_page.content.main %}
+          {{ content.render }}
+        {% endfor %}
+      {% endblock %}
+    </div>
+  </body>
+</html>
+
